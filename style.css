@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+    font-family: 'Poppins';
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+    background: url(img/background.jpeg) no-repeat center;
+    background-size: cover;
+    max-width: 100%;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px auto;
+    font-size: 4rem;
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: #1600c0;
+}
+
+div {
+    border: 4px solid #1f53c5;
+}
+
+div.content {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 0 auto;
+    background: #24303cbb;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 940px;
+}
+
+div.padre {
+    background-color: #363636dd;
+    border: 3px solid #1f53c5;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    height: 400px;
+    min-width: 400px;
+    text-align: center;
+}
+
+div.box1 p {
+    font-size: 1.5rem;
+    margin: 60px auto;
+}
+
+div.box3 p {
+    font-size: 1.5rem;
+    margin: 60px auto;
+}
+
+div.box3 div {
+    border: 3px dotted #1f53c5;
+    margin: 10px auto;
+}
+
+div.box4 h3 {
+    margin: 20px auto;
+    font-size: 2rem;
+    border-bottom: 2px solid #1600c0;
+}
+
+div.box4 ul {
+    list-style: none;
+    margin: 20px auto;
+}
+
+div.box4 ul li {
+    list-style: none;
+    margin: 8px auto;
+    text-align:  center;
+}
+
+button {
+    cursor: pointer;
+    width: 200px;
+    background: #1f53c5;
+    border: 4px soild;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px 0px #0077ff;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+}
+
+button:active {
+    background-color: #1600c0;
+    transform: scale(.9);
+    box-shadow: none;
+}
+
+@media screen and (max-width: 971px) {
+
+    div.content {
+        display: block;
+        margin: 0 auto;
+        max-width: 900px;
+    }
+
+    div.padre {
+        max-width: 400px;
+        margin: 3px auto;
+    }
+}
+
+@media screen and (max-width: 758px) {
+    
+    h1 {
+        font-size: 2.5rem;
+    }
+}

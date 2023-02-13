@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@latest/dist/Chart.min.js"></script>
+    <title>Actividad 2</title>
+</head>
+<body>
+    <h1>Aplicación Dolar - TRM</h1>
+    <div class="content">
+        <div class="padre box1">
+            <p>Hoy miercoles 30 de noviembre del 2022 el dolar está en:</p>
+            <p>1 USD = 4.809,51 COP</p>
+            <p>Precio dolar ayer: 4.805 COP</p>
+        </div>
+    
+        <div class=" padre box2">
+            <canvas id="myChart" max-width="300" height="300"></canvas>
+        </div>
+    
+        <div class=" padre box3">
+            <input type="radio" name="calculator"> Convertir dolares a pesos
+            <br>
+            <input type="radio" name="calculator" checked> Convertir pesos a dolares
+            <br>
+            <input type="text" placeholder="Cantidad">
+            <button>Convertir</button>
+            <div class="info">
+                <p>
+                    Para hoy 30 Nov 2022
+                    <br>
+                    Un monto de: $10.000 USD
+                    <br>
+                    Equivale a: 48.095.100 COP
+                </p>
+            </div>
+        </div>
+    
+        <div class=" padre box4">
+            <h3>Últimos 10 precios</h3>
+            <ul>
+                <li>miercoles 30 Nov 2022  =  4.809,51 COP</li>
+                <li>Martes    29 Nov 2022  =  4.840,60 COP</li>
+                <li>Lunes     28 Nov 2022  =  4.881,41 COP</li>
+                <li>Domingo   27 Nov 2022  =  4.881,41 COP</li>
+                <li>Sábado    26 Nov 2022  =  4.875,91 COP</li>
+                <li>Viernes   25 Nov 2022  =  4.809,51 COP</li>
+                <li>Jueves    24 Nov 2022  =  4.809,51 COP</li>
+                <li>Miercoles 23 Nov 2022  =  4.809,51 COP</li>
+                <li>Martes    22 Nov 2022  =  4.809,51 COP</li>
+                <li>Lunes     21 Nov 2022  =  4.809,51 COP</li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script src="grafico.js"></script>
+</html>
